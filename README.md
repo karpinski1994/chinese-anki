@@ -26,7 +26,9 @@ The Hanzi itself gets a separate visual cue:
 
 - **Left side:** an orc shaman's crooked wand, like the Ulu-Mulu wand from *Gothic 1*.
 - **Right side:** a Viking drakkar (boat/ship).
-- **Top of the mast:** a black crow perched on the kite/mast-like structure.
+- **Top of the mast:** a black crow perched on the mast.
+
+The repository includes a visual mnemonic poster at [`hanzi_movie_wo.svg`](hanzi_movie_wo.svg). It is intentionally drawn with generic fantasy/cartoon imagery rather than reproducing a specific copyrighted character design.
 
 The visual objects are mnemonic components, **not claims about the character's etymology**. The radical is recorded separately as `戈`.
 
@@ -52,7 +54,7 @@ I like Chinese.
 
 ### Anki source
 
-The deck is generated from `deck.py` using `genanki`. The model uses separate fields for the mnemonic anchors, Hanzi, pinyin, meaning, radical, visual components, movie, and example sentence, with CSS styling for Chinese text and the mnemonic panel.
+The deck is generated from `deck.py` using `genanki`. The model uses separate fields for the mnemonic anchors, Hanzi, pinyin, meaning, radical, visual components, movie, and example sentence. The `我` card also embeds `hanzi_movie_wo.svg` into the generated Anki package.
 
 ## Method rules
 
