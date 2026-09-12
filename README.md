@@ -28,7 +28,7 @@ The Hanzi itself gets a separate visual cue:
 - **Right side:** a Viking drakkar (boat/ship).
 - **Top of the mast:** a black crow perched on the mast.
 
-The repository includes a visual mnemonic poster at [`hanzi_movie_wo.svg`](hanzi_movie_wo.svg). It is intentionally drawn with generic fantasy/cartoon imagery rather than reproducing a specific copyrighted character design.
+![Hanzi Movie Method — 我 / wǒ](hanzi_movie_wo.svg)
 
 The visual objects are mnemonic components, **not claims about the character's etymology**. The radical is recorded separately as `戈`.
 
