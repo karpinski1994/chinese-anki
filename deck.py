@@ -4,6 +4,7 @@ DECK_ID = 2050000000
 MODEL_ID = 2050000001
 
 DECK_NAME = "00000::chinese"
+IMAGE_FILE = "hanzi_movie_wo.svg"
 
 CSS = r'''
 .card {
@@ -52,6 +53,14 @@ CSS = r'''
   margin-top: 14px;
   padding-top: 14px;
   border-top: 1px solid #deded5;
+}
+
+.movie-image {
+  display: block;
+  width: min(100%, 900px);
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
 }
 
 .example {
@@ -107,6 +116,7 @@ MODEL = genanki.Model(
 {{FrontSide}}
 <hr id="answer" class="answer-separator">
 <div class="meaning">{{Meaning}}</div>
+<img class="movie-image" src="hanzi_movie_wo.svg">
 <div class="mnemonic">
   <strong>Hanzi Movie</strong>
   <div>{{Initial}} → {{Final}} → {{Tone}} → {{Position}}</div>
@@ -152,4 +162,4 @@ NOTE = genanki.Note(
 DECK.add_note(NOTE)
 
 if __name__ == "__main__":
-    genanki.Package(DECK).write_to_file("00000_chinese.apkg")
+    genanki.Package(DECK, media_files=[IMAGE_FILE]).write_to_file("00000_chinese.apkg")
