@@ -48,6 +48,12 @@ CSS = r'''
   margin-top: 10px;
 }
 
+.hanzi-cue {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #deded5;
+}
+
 .example {
   margin-top: 22px;
   font-size: 23px;
@@ -84,6 +90,8 @@ MODEL = genanki.Model(
         {"name": "Final"},
         {"name": "Tone"},
         {"name": "Position"},
+        {"name": "Radical"},
+        {"name": "VisualComponents"},
         {"name": "Movie"},
         {"name": "Example"},
     ],
@@ -103,6 +111,7 @@ MODEL = genanki.Model(
   <strong>Hanzi Movie</strong>
   <div>{{Initial}} → {{Final}} → {{Tone}} → {{Position}}</div>
   <div class="movie">{{Movie}}</div>
+  <div class="hanzi-cue"><strong>Hanzi cue</strong><br>{{VisualComponents}}<br>Radical: {{Radical}}</div>
 </div>
 <div class="example">
   <div class="zh">{{Example}}</div>
@@ -125,12 +134,15 @@ NOTE = genanki.Note(
         "o → Słowackiego apartment",
         "3rd tone → Mexico",
         "1 → before/in front of entrance",
+        "戈 (gē) → halberd; traditional radical classification",
+        "Left: orc shaman's crooked wand (Ulu-Mulu-like). Right: Viking drakkar with a crow perched on top of the mast.",
         (
-            "Winnie the Pooh is standing in front of the entrance of the "
+            "Winnie the Pooh stands in front of the entrance of the "
             "Słowackiego apartment in Mexico. He points dramatically at "
-            "himself and shouts 我! (“me / I”). The exaggerated self-pointing "
-            "action is the retrieval cue for the meaning, while the location "
-            "and tone geography anchor the pronunciation."
+            "himself and shouts 我! (“me / I”). At the same time, the shape "
+            "of 我 becomes a bizarre scene: an orc shaman's crooked wand on "
+            "the left and a Viking drakkar on the right, with a black crow "
+            "perched on top of its mast."
         ),
         "我喜欢中文。<br>Wǒ xǐhuān Zhōngwén.<br>I like Chinese.",
     ],
