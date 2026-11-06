@@ -63,3 +63,7 @@ The deck is generated from `deck.py` using `genanki`. The model uses separate fi
 3. **Visual mnemonics:** may describe what a character resembles, but must not be presented as linguistic etymology.
 4. **Tone accuracy:** always preserve the actual Mandarin tone.
 5. **Retrieval:** recognition is not mastery; cards should support active recall of meaning, pinyin, tone, Hanzi, and character structure.
+
+## Personal mnemonic reference
+
+The learner's full personal mnemonic matrix—including the Poland → UK → Mexico → schools location sequence, finals-to-location assignments, tone positions, and initial/person associations—is documented in [docs/HANZI_MOVIE_METHOD.md](docs/HANZI_MOVIE_METHOD.md). Use this reference when constructing future vocabulary mnemonics and Anki cards.
